@@ -1,18 +1,22 @@
 import { useState }  from 'react'
 
+import {nanoid} from '@reduxjs/toolkit';
 import {useDispatch} from 'react-redux'
 import {addContact} from '../../redux/contactSlice'
 
 function Form() {
     const [name, setName] = useState('')
 
-    const dispatch = useDispatch();
+    const dispatch = useDispatch(); // dispatch kullanmamın sebebi redux ile bağlantı kurmak
 
     const handleSubmit = (e) => {
         e.preventDefault() // yazmamın sebebi sayfayı yenilemesini engellemek
 
+        if(!name ) return false;
+
         console.log("hjdjhjjghdhgj");
-        dispatch(addContact({name}));
+        dispatch(addContact({ id:nanoid(), name}));
+        setName('');
 
     }
   return (

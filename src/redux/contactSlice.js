@@ -8,6 +8,7 @@ const contactSlice = createSlice ({
     initialState,
     reducers: {
         addContact: contactAdaptor.addOne,
+        addContacts: contactAdaptor.addMany,
     },
 });
 
