@@ -8,11 +8,11 @@ function List() {
   const contacts = useSelector(contactSelectors.selectAll);
 
   return (
-    <div>
+    <ul className="list">
       {contacts.map((contact) => (
         <Item key={contact.id} item={contact} />
       ))}
-    </div>
+    </ul>
   );
 }
 

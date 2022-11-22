@@ -4,7 +4,7 @@ import List from './List'
 
 function Contacts() {
   return (
-    <div className='center'>
+    <div id="container" className='center'>
         <h1>Contacts</h1>
         <Form/>
         <List/>

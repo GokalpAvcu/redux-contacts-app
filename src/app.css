@@ -1,5 +1,43 @@
-.center {
-    width: 162px;
+.App {
     text-align: center;
-    margin: auto;
+}
+
+#container {
+    width: 500px;
+    background-color: aliceblue;
+    padding: 20px;
+}
+
+.center {
+  width: 162px;
+  text-align: center;
+  margin: auto;
+}
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    box-sizing: border-box;
+}
+
+.btn {
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px 0;
+}
+
+.deleteBtn {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-left: 10px;
 }
